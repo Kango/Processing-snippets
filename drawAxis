@@ -1,0 +1,17 @@
+
+void drawAxis() {
+
+  pushStyle();
+  strokeWeight(2);
+
+  stroke(255, 0, 0);  //RED
+  line(0, 0, 0, width/2, 0, 0);
+
+  stroke(0, 255, 0);  //GREEN
+  line(0, 0, 0, 0, height/2, 0);
+
+  stroke(0, 0, 255);  //BLUE
+  line(0, 0, 0, 0, 0, max(width/2, height/2));
+
+  popStyle();
+}
